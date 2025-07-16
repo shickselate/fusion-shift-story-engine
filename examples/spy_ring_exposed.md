@@ -36,7 +36,7 @@ Malen, known for his ruthless efficiency in rooting out internal threats, has pl
 
 ## 🎨 Image
 
-![AI-generated image of Warlord Thorne Malen uncovering the spy ring](images/spy_ring_thorne_malen.png)
+![AI-generated image of Warlord Thorne Malen uncovering the spy ring](images/spy_ring_thorne_malen.jpg)
 
 ---
 
