@@ -32,12 +32,12 @@ EVENT_ACTIONS = {
     ]
 }
 
-def format_narrative(character, event_type="battle", tone="neutral"):
+def format_narrative(character, event_type="battle", tone="neutral", outcome=None):
     template = TONE_TEMPLATES.get(tone, TONE_TEMPLATES["neutral"])
     action = random.choice(EVENT_ACTIONS.get(event_type, ["took a mysterious action"]))
     trait_phrase = ", ".join(character["traits"])
 
-    return template.format(
+    base_story = template.format(
         event_intro=f"A new {event_type} event has occurred.",
         event_action=action,
         character_name=character["name"],
@@ -45,6 +45,12 @@ def format_narrative(character, event_type="battle", tone="neutral"):
         faction=character["faction"],
         trait_phrase=trait_phrase
     )
+
+    if outcome:
+        return f"{base_story} Outcome: {outcome}."
+    else:
+        return base_story
+
 
 # Example usage
 if __name__ == "__main__":
