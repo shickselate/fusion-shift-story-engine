@@ -17,7 +17,10 @@ class StoryQueue:
     def process_next(self, tone="neutral"):
         if self.queue:
             event = self.queue.popleft()
-            story = format_narrative(event["main_actor"], event["type"], tone=tone)
+            story = format_narrative(event["main_actor"], 
+                                     event["type"],
+                                     tone=tone,
+                                     outcome=event.get("outcome"))
             return {
                 "event": event,
                 "story": story
