@@ -1,33 +1,26 @@
-# 🌌 Fusion Shift: Story Engine
-
-**A generative storytelling system for multiplayer space strategy games.**
+# Fusion Shift: Story Engine
+A generative storytelling system for multiplayer space strategy games.
 
 This engine turns player-driven events into dynamic, character-rich narratives — complete with faction drama, cinematic flair, and visual prompts for AI-generated media.
 
----
-
 ## 🚀 What It Does
-
 Fusion Shift’s story engine listens to structured game data — battles, diplomacy, espionage — and responds with:
 
-- 📝 **Auto-generated narrative**: Rich text describing what just happened (and why it matters)
-- 🖼 **Image + video prompts**: For use with tools like Midjourney, DALL·E, Sora, or Runway
-- 🎭 **Character and faction arcs**: Expanding over time, driven by real gameplay
-- 🗞 **News feeds**: Personal, factional, and galactic-level perspectives
-
----
+- 📝 Auto-generated narrative: Rich text describing what just happened (and why it matters)
+- 🖼 Image + video prompts: For use with tools like Midjourney, DALL·E, Sora, or Runway
+- 🎭 Character and faction arcs: Expanding over time, driven by real gameplay
+- 🗞 News feeds: Personal, factional, and galactic-level perspectives
+- 🧠 Outcome-driven events: Each game event includes a resolution (victory, defeat, treaty, sabotage, etc.)
 
 ## 🧠 Core Modules
 
-| Folder        | Purpose                                                   |
-|---------------|-----------------------------------------------------------|
-| `engine/`     | Core story engine logic (event processing, narrative generation) |
-| `prototypes/` | Experimental tools (e.g. media prompt builders, tone mappers)   |
-| `docs/`       | System design, architecture, and creative notes           |
-| `tests/`      | Unit and functional test scripts                          |
-| `assets/`     | Optional folder for portraits, icons, example exports     |
-
----
+| Folder       | Purpose |
+|--------------|---------|
+| `engine/`    | Core story engine logic (event processing, narrative generation, story queue) |
+| `prototypes/`| Experimental tools (e.g. media prompt builders, tone mappers) |
+| `docs/`      | System design, architecture, and creative notes |
+| `tests/`     | Unit and functional test scripts |
+| `assets/`    | Optional folder for portraits, icons, example exports |
 
 ## 📄 Key Docs
 
@@ -40,13 +33,13 @@ Fusion Shift’s story engine listens to structured game data — battles, diplo
 - `docs/designNotes/FS_VisualNarrative_Hooks_v0.1.md`  
   🎨 Visual storytelling: prompt scaffolding for images + videos
 
----
-
 ## 🔍 Example Usage
 
 ```bash
-python prototypes/mediaPromptBuilder.py
+python engine/storyQueue.py
+
 ```
+
 
 Outputs a styled image prompt based on an example in-game event.  
 Future versions will run live against real game data or player submissions.
@@ -67,7 +60,8 @@ Designed to integrate with the multiplayer game *Fusion Shift* created by Andy L
 ## 🌱 Goals
 
 - Provide compelling, player-specific stories in real time  
-- Blend text, media, and memory across turns and campaigns  
+- Blend text, media, and memory across turns and campaigns
+- Track world state for memory and causality  
 - Eventually allow player agency in shaping stories, alliances, betrayals, and dynasties
 
 ---
