@@ -36,7 +36,7 @@ def generate_event():
         "magnitude": magnitude,
         "timestamp": "232.94.14.08",  # placeholder format
         "main_actor": actor,
-        "involved_factions": [actor["faction"], opposing_faction,
+        "involved_factions": [actor["faction"], opposing_faction],
         "outcome": outcome
     }
 
