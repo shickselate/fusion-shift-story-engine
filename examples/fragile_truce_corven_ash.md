@@ -18,9 +18,12 @@ As stars flicker quietly across the disputed sectors, all eyes now turn to the n
 
 ---
 
+
+![Corven Ash in Temple Ship](images/corven_ash_truce.jpg)
+
+
+
 **🎨 DreamShaper Prompt**  
 *A cloaked high priestess standing on a glass observation deck inside a vast temple spacecraft, starlight streaming in behind her. She raises one hand as if delivering a solemn broadcast. The room is lined with robed acolytes and flickering holograms of ancient scripts. Mood: spiritual, tense, sci-fi gothic. Tyrian Pact aesthetics — sharp angles, deep blue and violet tones, faint gold symbols. Cinematic lighting.*
 
 ---
-
-![Corven Ash in Temple Ship](images/corven_ash_truce.jpg)
