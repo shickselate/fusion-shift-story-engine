@@ -23,7 +23,7 @@ def generate_event():
     event_type = random.choice(EVENT_TYPES)
     location = random.choice(LOCATIONS)
     magnitude = random.choice(MAGNITUDE)
-
+    outcome = random.choice(EVENT_OUTCOMES.get(event_type, ["event unresolved"]))
     actor = generate_character()
     opposing_faction = random.choice([
         f for f in ["House Myrrk", "Solaris Union", "Cult of Mirrors", "Tyrian Pact", "Zarim Alliance"]
@@ -36,7 +36,8 @@ def generate_event():
         "magnitude": magnitude,
         "timestamp": "232.94.14.08",  # placeholder format
         "main_actor": actor,
-        "involved_factions": [actor["faction"], opposing_faction]
+        "involved_factions": [actor["faction"], opposing_faction,
+        "outcome": outcome]
     }
 
     return event
