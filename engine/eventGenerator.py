@@ -6,10 +6,18 @@ EVENT_TYPES = ["battle", "diplomacy", "espionage", "marriage"]
 
 LOCATIONS = [
     "Icarus Drift", "Virel System", "Ashen Belt", "Zarim Core", "The Twin Moons of Quarn",
-    "Junction Delta", "Cryos Reach", "Deep Station Nym", "The Veiled Expanse"
-]
+    "Junction Delta", "Cryos Reach", "Deep Station Nym", "The Veiled Expanse"]
 
 MAGNITUDE = ["minor", "moderate", "major", "critical"]
+
+
+EVENT_OUTCOMES = {
+    "battle": ["victory", "defeat", "stalemate"],
+    "diplomacy": ["treaty signed", "talks collapsed", "agreement delayed"],
+    "espionage": ["intel recovered", "operative captured", "operation aborted"],
+    "marriage": ["alliance sealed", "ceremony interrupted", "match withdrawn"]
+}
+
 
 def generate_event():
     event_type = random.choice(EVENT_TYPES)
