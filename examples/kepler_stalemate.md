@@ -40,7 +40,7 @@ The battle continues as of this report, with both fleets locked in brutal close-
 
 ## 🎨 Image
 
-![AI-generated image of Aurea Syle's fleet locked in battle in the Kepler System](images/aurea_syle_kepler_battle.png)
+![AI-generated image of Aurea Syle's fleet locked in battle in the Kepler System](images/aurea_syle_kepler_battle.jpg)
 
 ---
 
