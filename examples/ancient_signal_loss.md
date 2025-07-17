@@ -13,3 +13,5 @@ The loss comes at a particularly volatile time for **Deep Station Nym**, which h
 This marks the **third unexplained incident** in the region this month, raising questions about the stability of the diplomatic negotiations.
 
 ---
+
+![Deep Station Nym](images/station_nym.jpg)
