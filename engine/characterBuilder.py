@@ -34,6 +34,7 @@ def generate_character():
     role = random.choice(ROLES)
     faction = random.choice(FACTIONS)
     title = random.choice(TITLES)
+    traits = random.sample(TRAITS, 2)  # Two traits
 
     return {
         "name": name,
