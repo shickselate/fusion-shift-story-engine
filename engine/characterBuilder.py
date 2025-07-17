@@ -1,53 +1,42 @@
+# characterBuilder.py
+
 import random
 
-# Preset character pools
-NAMES = [
-    "Kael Vox", "Rika Kael", "Thorne Malen", "Aurea Syle", "Vel Marrek",
-    "Lyra Dax", "Juno Nyre", "Corven Ash", "Zera Thal", "Elion Vey"
+# Shared faction list (used in both character and event generation)
+FACTIONS = [
+    "Tyrian Pact", "Zarim Alliance", "House Myrrk", "Solaris Union", "Cult of Mirrors",
+    "Virel Enclave", "The Obsidian Fold", "Nomads of Icarus"
 ]
 
 ROLES = [
-    "Admiral", "Spymaster", "High Priestess", "Industrial Magnate",
-    "Emperor", "Envoy", "Warlord", "Archivist", "Diplomat", "Fleet Commander"
+    "Warlord", "High Priestess", "Admiral", "Scientist", "Diplomat", "Spy", "Explorer",
+    "Heir", "Governor", "Archivist", "Engineer", "Fleet Commander"
 ]
 
-FACTIONS = [
-    "House Myrrk", "Solaris Union", "Cult of Mirrors", "Tyrian Pact", "Zarim Alliance"
+NAMES = [
+    "Kael", "Aurea", "Vel", "Thorne", "Nyra", "Rika", "Corven", "Syle", "Jalen", "Vexa",
+    "Doran", "Zirra", "Ash", "Lira", "Varek", "Myrr", "Zhale", "Erix", "Talon", "Ilyr"
 ]
 
-TRAITS = [
-    "ruthless", "visionary", "calculating", "charismatic", "impulsive",
-    "loyal", "cunning", "honour-bound", "mysterious", "ambitious"
+TITLES = [
+    "of the Crimson Star", "from Nexus Prime", "of Quarn's Moon", "of the Forgotten Ring",
+    "from the Ion Reach", "of Deep Station Nym", "of the Silent Spire", "from Helix Verge"
 ]
 
-VISUAL_STYLES = {
-    "dynastic_art": "formal, ornate, regal lighting, portrait style",
-    "signal_drift": "glitchy, surreal, fragmented facial geometry",
-    "techno_realist": "military aesthetic, sharp lines, cinematic realism"
-}
-
+# Function to generate a character
 def generate_character():
-    name = random.choice(NAMES)
+    name = f"{random.choice(NAMES)} {random.choice(NAMES)}"
     role = random.choice(ROLES)
     faction = random.choice(FACTIONS)
-    selected_traits = random.sample(TRAITS, 3)
-    visual_style_key = random.choice(list(VISUAL_STYLES.keys()))
-    portrait_prompt = (
-        f"{role}, {', '.join(selected_traits)}, "
-        f"{VISUAL_STYLES[visual_style_key]}"
-    )
+    title = random.choice(TITLES)
 
     return {
         "name": name,
         "role": role,
         "faction": faction,
-        "traits": selected_traits,
-        "visual_style": visual_style_key,
-        "portrait_prompt": portrait_prompt
+        "title": title
     }
 
-# Demo
+# Optional: test output
 if __name__ == "__main__":
-    character = generate_character()
-    for key, value in character.items():
-        print(f"{key}: {value}")
+    print(generate_character())
