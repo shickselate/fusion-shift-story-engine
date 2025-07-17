@@ -12,17 +12,15 @@ def format_narrative(event, tone="neutral"):
     complication_line = f"Complication encountered: {event['complication']}."
     outcome_line = f"Outcome: {event['outcome']}."
 
-    return f"{action_line}\n{context_line}\n{complication_line}\n{outcome_line}"
-
     if tone == "cinematic":
         return f"""{action_line}
 {context_line}
 {complication_line}
 {outcome_line}"""
-    
+
     elif tone == "brief":
         return f"{name} ({title}, {faction}) triggered a {event['type']} in {event['location']}. Outcome: {event['outcome']}."
-    
+
     elif tone == "intelligence":
         return f"""[INTEL REPORT]
 Subject: {name} ({title}, {faction})
@@ -31,6 +29,6 @@ Zone: {event['location']} ({event['environment']})
 Importance: {event['strategic_importance']} | Instability: {event['instability']}
 Complication: {event['complication']}
 Result: {event['outcome']}"""
-    
+
     else:
-        return action_line + " " + outcome_line
+        return f"{action_line}\n{context_line}\n{complication_line}\n{outcome_line}"
