@@ -8,7 +8,7 @@ FACTIONS = [
     "Virel Enclave", "The Obsidian Fold", "Nomads of Icarus"
 ]
 
-ROLES = [
+TITLES = [
     "Warlord", "High Priestess", "Admiral", "Scientist", "Diplomat", "Spy", "Explorer",
     "Heir", "Governor", "Archivist", "Engineer", "Fleet Commander"
 ]
@@ -18,7 +18,7 @@ NAMES = [
     "Doran", "Zirra", "Ash", "Lira", "Varek", "Myrr", "Zhale", "Erix", "Talon", "Ilyr"
 ]
 
-TITLES = [
+HONOR = [
     "of the Crimson Star", "from Nexus Prime", "of Quarn's Moon", "of the Forgotten Ring",
     "from the Ion Reach", "of Deep Station Nym", "of the Silent Spire", "from Helix Verge"
 ]
