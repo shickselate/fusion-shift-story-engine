@@ -53,7 +53,7 @@ This is a **work-in-progress prototype**, being developed collaboratively by:
 - **Stephen Hicks** – creative director, narrative systems  
 - **ChatGPT** – technical assistant and code collaborator
 
-Designed to integrate with the multiplayer game *Fusion Shift* created by Andy Lewis.
+Designed to integrate with the multiplayer game *Fusion Shift* created by Andy Longhurst.
 
 ---
 
