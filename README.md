@@ -54,6 +54,7 @@ This is a **work-in-progress prototype**, being developed collaboratively by:
 - **ChatGPT** – technical assistant and code collaborator
 
 Designed to integrate with the multiplayer game *Fusion Shift* created by Andy Longhurst.
+[Visit Fusion Shift Alpha](https://alpha.fusionshift.net)
 
 ---
 
