@@ -39,7 +39,7 @@ def generate_character():
         "name": name,
         "role": role,
         "faction": faction,
-        "title": title
+        "title": title,
         "traits": traits
     }
 
