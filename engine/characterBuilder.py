@@ -23,6 +23,11 @@ TITLES = [
     "from the Ion Reach", "of Deep Station Nym", "of the Silent Spire", "from Helix Verge"
 ]
 
+TRAITS = [
+    "ambitious", "calculating", "honour-bound", "ruthless", "visionary",
+    "secretive", "charismatic", "disciplined", "impulsive", "stoic"
+]
+
 # Function to generate a character
 def generate_character():
     name = f"{random.choice(NAMES)} {random.choice(NAMES)}"
@@ -35,6 +40,7 @@ def generate_character():
         "role": role,
         "faction": faction,
         "title": title
+        "traits": traits
     }
 
 # Optional: test output
