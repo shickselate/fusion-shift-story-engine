@@ -1,6 +1,7 @@
 import random
 
-def format_narrative(character, event, tone="cinematic"):
+def format_narrative(event, tone="neutral"):
+    character = event["main_actor"]
     name = character["name"]
     title = character["title"]
     faction = character["faction"]
@@ -10,6 +11,8 @@ def format_narrative(character, event, tone="cinematic"):
     context_line = f"The region is considered a {event['strategic_importance']} and has been {event['instability']} of late."
     complication_line = f"Complication encountered: {event['complication']}."
     outcome_line = f"Outcome: {event['outcome']}."
+
+    return f"{action_line}\n{context_line}\n{complication_line}\n{outcome_line}"
 
     if tone == "cinematic":
         return f"""{action_line}
